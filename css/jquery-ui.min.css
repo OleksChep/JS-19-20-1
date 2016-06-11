@@ -154,36 +154,6 @@
 	-ms-touch-action: none;
 	touch-action: none
 }
-.ui-accordion .ui-accordion-header {
-	display: block;
-	cursor: pointer;
-	position: relative;
-	margin: 2px 0 0 0;
-	padding: .5em .5em .5em .7em;
-	min-height: 0;
-	font-family: 'Ubuntu';
-	text-align: left;
-	text-transform: uppercase;
-}
-.ui-accordion .ui-accordion-icons {
-	padding-left: 2.2em
-}
-.ui-accordion .ui-accordion-icons .ui-accordion-icons {
-	padding-left: 2.2em
-}
-.ui-accordion .ui-accordion-header .ui-accordion-header-icon {
-	position: absolute;
-	left: .5em;
-	top: 50%;
-	margin-top: -8px
-}
-.ui-accordion .ui-accordion-content {
-	padding: 1em 2.2em;
-	border-top: 0;
-	overflow: auto;
-	font-family: 'Ubuntu';
-	text-align: justify;
-		background-color: #fff;
 
 }
 .ui-autocomplete {
@@ -1459,3 +1429,69 @@ body .ui-tooltip {
 .ui-icon-grip-diagonal-se {
 	background-position: -80px -224px
 }
+
+/* ACCORDEON */
+.accordion, .accordion * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.accordion {
+  float: left;
+  width: 600px;
+  overflow: hidden;
+  padding-left: 50px;
+  background: #f7f7f7; }
+
+/*----- Section Titles -----*/
+.accordion-section-title {
+  width: 530px;
+  padding: 5px;
+  display: inline-block;
+  height: 33px;
+  background: white;
+  border: 1px solid #e8e8e8;
+  transition: all linear 0.15s;
+  text-decoration: none;
+  font-family: "ubuntumedium", sans-serif;
+  font-size: 13px;
+  margin-bottom: 3px;
+  color: #2a2d32; }
+
+.accordion-section-title.active, .accordion-section-title:hover {
+  /*background:#4c4c4c;*/
+  opacity: .8;
+  /* Type */
+  text-decoration: none; }
+
+.accordion-section:last-child .accordion-section-title {
+  border-bottom: none; }
+
+/*----- Section Content -----*/
+.accordion-section-content {
+  width: 530px;
+  padding: 30px;
+  display: none; 
+  text-align: left;}
+
+.active__title {
+  border: none;
+  background: #f4b60d;
+  color: white;
+  padding-top: 11px;}
+
+.pre-text {
+  padding: 5px 10px 5px 7px;
+  border-right: 1px solid #e8e8e8; }
+
+.pre-text__active {
+  padding: 5px 12px 5px 9px; }
+
+.accordion-section__text {
+  font-family: "Arial Regular", sans-serif;
+  font-size: 15px;
+  color: #8a8a8a; }
+
+.inner-box-text {
+  padding-right: 330px;
+ }

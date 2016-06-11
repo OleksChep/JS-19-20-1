@@ -280,12 +280,147 @@
 	.item__repair {
 		@include sprite( url(../../img/content.png), 276px -4px, 260px, 260px);
 	}
+	
+	
+	
+	/* ACCORDEON */
+.accordion, .accordion * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.accordion {
+  float: left;
+  width: 575px;
+  overflow: hidden;
+  padding-left: 30px;
+  background: #f7f7f7; }
+
+/*----- Section Titles -----*/
+.accordion-section-title {
+  width: 530px;
+  padding: 5px;
+  display: inline-block;
+  background: white;
+  border: 1px solid #e8e8e8;
+  transition: all linear 0.15s;
+  text-decoration: none;
+  font-family: "ubuntumedium", sans-serif;
+  font-size: 13px;
+  margin-bottom: 3px;
+  color: #2a2d32; }
+
+.accordion-section-title.active, .accordion-section-title:hover {
+  /*background:#4c4c4c;*/
+  opacity: .8;
+  /* Type */
+  text-decoration: none; }
+
+.accordion-section:last-child .accordion-section-title {
+  border-bottom: none; }
+
+/*----- Section Content -----*/
+.accordion-section-content {
+  width: 530px;
+  padding: 15px;
+  display: none; }
+
+.active__title {
+  border: none;
+  background: #f4b60d;
+  color: white; }
+
+.pre-text {
+  padding: 5px 10px 5px 7px;
+  border-right: 1px solid #e8e8e8; }
+
+.pre-text__active {
+  padding: 5px 12px 5px 9px; }
+
+.accordion-section__text {
+  font-family: "Arial Regular", sans-serif;
+  font-size: 13px;
+  color: #8a8a8a; }
+
+.inner-box-text {
+  padding-left: 10px; }
+	
+	
+	
+	
 	.news {
 		@include clearfix();
 		@extend .main;
 		background: #f7f7f7;
 		width: 1160px;
 		padding-bottom: 40px;
+		
+		
+		/* ACCORDEON */
+.accordion, .accordion * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.accordion {
+  float: left;
+  width: 575px;
+  overflow: hidden;
+  padding-left: 30px;
+  background: #f7f7f7; }
+
+/*----- Section Titles -----*/
+.accordion-section-title {
+  width: 530px;
+  padding: 5px;
+  display: inline-block;
+  background: white;
+  border: 1px solid #e8e8e8;
+  transition: all linear 0.15s;
+  text-decoration: none;
+  font-family: "ubuntumedium", sans-serif;
+  font-size: 13px;
+  margin-bottom: 3px;
+  color: #2a2d32; }
+
+.accordion-section-title.active, .accordion-section-title:hover {
+  /*background:#4c4c4c;*/
+  opacity: .8;
+  /* Type */
+  text-decoration: none; }
+
+.accordion-section:last-child .accordion-section-title {
+  border-bottom: none; }
+
+/*----- Section Content -----*/
+.accordion-section-content {
+  width: 530px;
+  padding: 15px;
+  display: none; }
+
+.active__title {
+  border: none;
+  background: #f4b60d;
+  color: white; }
+
+.pre-text {
+  padding: 5px 10px 5px 7px;
+  border-right: 1px solid #e8e8e8; }
+
+.pre-text__active {
+  padding: 5px 12px 5px 9px; }
+
+.accordion-section__text {
+  font-family: "Arial Regular", sans-serif;
+  font-size: 13px;
+  color: #8a8a8a; }
+
+.inner-box-text {
+  padding-left: 10px; }
+		
+		
+		
+		
 		.news__block {
 			width: 45%;
 			display: inline-block;
